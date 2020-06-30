@@ -2,14 +2,11 @@
 
 namespace Admin\Controller;
 use Think\Controller;
-/**
- * 入库管理
- */
+
 class InstoreController extends BaseController
 {
     /**
      * 入库列表
-     * @return [type] [description]
      */
     public function index($key="")
     {
@@ -93,8 +90,6 @@ $pro = M('product')->where('id = %d',$id)-> field('kucun')->setInc('kucun', I(in
     }
     /**
      * 删除入库
-     * @param  [type] $id [description]
-     * @return [type]     [description]
      */
     public function delete($id)
     {
