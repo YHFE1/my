@@ -1,0 +1,31 @@
+[ 2020-07-01T00:19:52+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Instore.instore_remarks' in 'field list'
+
+[ 2020-07-01T00:28:32+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Instore.instore_remarks' in 'field list'
+
+[ 2020-07-01T00:29:10+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Instore.instore_remarks' in 'field list'
+
+[ 2020-07-01T00:29:29+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=update
+ERR: 参数错误或者未定义:id
+
+[ 2020-07-01T00:29:48+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=update%EF%BC%9Fid=1
+ERR: 非法操作:update？id=1
+
+[ 2020-07-01T00:29:53+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=update
+ERR: 参数错误或者未定义:id
+
+[ 2020-07-01T00:29:54+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Instore.instore_remarks' in 'field list'
+
+[ 2020-07-01T00:32:14+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=instore&a=index
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Instore.instore_remarks' in 'field list'
+
+[ 2020-07-01T01:00:52+08:00 ] ::1 /Test/wms/index.php?m=Admin&c=Login&a=login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+SQL: SELECT * FROM `member` WHERE ( username = 'Apple' and password= 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `member` SET `update_at`='1593536452',`login_ip`='0.0.0.0' WHERE ( username = 'Apple' and password= 'e10adc3949ba59abbe56e057f20f883e' ) [ RunTime:0.0260s ]
+
